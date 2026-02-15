@@ -7,21 +7,27 @@
   <meta name="description" content="Jolie Wang — Actor. Carnegie Mellon University School of Drama." />
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap');
     :root{
-      --bg:#0c0c0e;
-      --fg:#f5f5f5;
-      --muted:#b9b9b9;
-      --card:#141416;
-      --line:#242427;
+      --bg:#f9f6f1;
+      --fg:#1c1b19;
+      --muted:#5f5a54;
+      --card:#ffffff;
+      --line:#e5ded5;
+      --accent:#b85c38;
       --max:1000px;
-      --r:20px;
+      --r:22px;
+      --shadow:0 18px 40px rgba(37, 32, 27, 0.08);
     }
 
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, sans-serif;
-      background:var(--bg);
+      font-family: "Source Sans 3", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(600px 400px at 10% 0%, rgba(184, 92, 56, 0.10), transparent 60%),
+        radial-gradient(700px 500px at 100% 10%, rgba(72, 98, 131, 0.08), transparent 60%),
+        var(--bg);
       color:var(--fg);
       line-height:1.6;
     }
@@ -50,6 +56,8 @@
       font-size:56px;
       margin:0;
       letter-spacing:-1px;
+      font-family:"Fraunces", serif;
+      font-weight:600;
     }
 
     .sub{
@@ -74,9 +82,10 @@
     }
 
     .btn.primary{
-      background:white;
-      color:black;
+      background:var(--accent);
+      color:white;
       border:none;
+      box-shadow:0 8px 16px rgba(184, 92, 56, 0.18);
     }
 
     section{
@@ -86,6 +95,8 @@
     h2{
       font-size:22px;
       margin-bottom:20px;
+      font-family:"Fraunces", serif;
+      font-weight:600;
     }
 
     .media-grid{
@@ -100,6 +111,7 @@
       border-radius:16px;
       overflow:hidden;
       border:1px solid var(--line);
+      box-shadow:var(--shadow);
     }
 
     iframe{
@@ -120,6 +132,7 @@
       width:100%;
       border-radius:16px;
       border:1px solid var(--line);
+      box-shadow:var(--shadow);
     }
 
     .card{
@@ -127,6 +140,7 @@
       padding:20px;
       border-radius:var(--r);
       border:1px solid var(--line);
+      box-shadow:var(--shadow);
     }
 
     footer{
@@ -134,6 +148,13 @@
       text-align:center;
       color:var(--muted);
       font-size:14px;
+    }
+
+    .about{
+      max-width:760px;
+      margin:0 auto;
+      font-size:17px;
+      color:var(--fg);
     }
 
     @media(max-width:800px){
@@ -151,6 +172,7 @@
     <nav>
       <div><strong>Jolie Wang</strong></div>
       <div class="navlinks">
+        <a href="#about">About</a>
         <a href="#media">Media</a>
         <a href="#headshots">Headshots</a>
         <a href="#contact">Contact</a>
@@ -169,6 +191,14 @@
         <a class="btn" href="https://www.instagram.com/j0liewang/" target="_blank">Instagram</a>
       </div>
     </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="card about">
+        <p>I’m a B.F.A. Acting student at Carnegie Mellon University’s School of Drama, drawn to work that is grounded, specific, and emotionally alive. I’m especially passionate about text-driven storytelling, whether that means classical language or contemporary on-camera work. I’m interested in characters who feel intelligent, layered, and quietly powerful, and I love uncovering what makes them human. My training has sharpened my focus on clarity, vocal strength, and presence, both in rehearsal and performance. Above all, I’m committed to doing work that feels honest and connected, on stage and on screen.</p>
+      </div>
+    </section>
 
     <!-- MEDIA -->
     <section id="media">
