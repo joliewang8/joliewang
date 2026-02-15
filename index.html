@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jolie Wang</title>
+  <meta name="description" content="Jolie Wang — Actor. Carnegie Mellon University School of Drama." />
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --fg:#f5f5f5;
+      --muted:#b9b9b9;
+      --card:#141416;
+      --line:#242427;
+      --accent:#ffffff;
+      --max:980px;
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.5;
+    }
+    a{color:var(--fg); text-decoration:none}
+    a:hover{opacity:.85}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    nav{
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+      position:sticky; top:0; padding:14px 0; background:linear-gradient(var(--bg), rgba(11,11,12,.6));
+      backdrop-filter: blur(6px);
+    }
+    .navlinks{display:flex; gap:14px; flex-wrap:wrap}
+    .pill{
+      border:1px solid var(--line); border-radius:999px;
+      padding:8px 12px; font-size:14px; color:var(--muted);
+    }
+    .pill:hover{color:var(--fg); border-color:#3a3a3f}
+    header{padding:48px 0 24px}
+    h1{font-size:56px; letter-spacing:-.02em; margin:0 0 10px}
+    .sub{color:var(--muted); font-size:18px; max-width:70ch}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:22px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:12px; border:1px solid var(--line);
+      background:transparent; color:var(--fg); font-size:14px;
+    }
+    .btn.primary{background:var(--fg); color:#111; border-color:transparent}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px; margin-top:22px}
+    .card{
+      grid-column: span 6;
+      background:var(--card); border:1px solid var(--line);
+      border-radius:var(--r); padding:18px;
+    }
+    .card h3{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+    section{padding:34px 0; border-top:1px solid var(--line)}
+    section h2{margin:0 0 14px; font-size:20px}
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    .media{
+      background:var(--card); border:1px solid var(--line);
+      border-radius:var(--r); padding:12px;
+    }
+    .embed{
+      position:relative; width:100%; padding-top:56.25%;
+      border-radius:14px; overflow:hidden; border:1px solid var(--line);
+      background:#0f0f10;
+    }
+    .embed iframe{
+      position:absolute; inset:0; width:100%; height:100%; border:0;
+    }
+    .resume{
+      background:var(--card); border:1px solid var(--line);
+      border-radius:var(--r); padding:18px;
+    }
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    footer{margin-top:40px; color:var(--muted); font-size:13px}
+    .small{font-size:13px; color:var(--muted)}
+    @media (max-width:820px){
+      h1{font-size:40px}
+      .card{grid-column: span 12}
+      .two{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="pill" style="color:var(--fg)">Jolie Wang</div>
+      <div class="navlinks">
+        <a class="pill" href="#media">Media</a>
+        <a class="pill" href="#resume">Resume</a>
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Jolie Wang</h1>
+      <div class="sub">
+        Actor • Carnegie Mellon University School of Drama (B.F.A. Acting)
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#media">Watch Reel</a>
+        <a class="btn" href="#resume">Download Resume</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Classical + On-Camera Training</h3>
+          <p>Text-driven work with a focus on clarity, specificity, and presence.</p>
+        </div>
+        <div class="card">
+          <h3>Based in</h3>
+          <p>Pittsburgh / Los Angeles • Available for NYC/LA hire.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="media">
+      <h2>Media</h2>
+      <div class="two">
+        <div class="media">
+          <div class="embed">
+            <!-- Replace VIDEO_ID with your YouTube or Vimeo embed -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+          </div>
+          <div class="small" style="margin-top:10px">Acting Reel</div>
+        </div>
+        <div class="media">
+          <div class="embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+          </div>
+          <div class="small" style="margin-top:10px">Scene / Monologue</div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px;">
+        Add headshots and production stills by placing images in a <b>photos/</b> folder and linking them here.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="resume">
+        <p style="margin:0 0 12px; color:var(--muted)">
+          Download: <a class="btn" style="padding:8px 10px" href="JolieWang_Resume.pdf">JolieWang_Resume.pdf</a>
+        </p>
+        <h3 style="margin:0 0 8px; font-size:16px">Selected Training</h3>
+        <ul>
+          <li>Carnegie Mellon University — B.F.A. Drama (Acting)</li>
+          <li>Acting on Camera • Voice • Movement • Speech • Text Analysis</li>
+        </ul>
+
+        <h3 style="margin:18px 0 8px; font-size:16px">Skills</h3>
+        <ul>
+          <li>Fluent in Mandarin</li>
+          <li>Intermediate Ballet • Piano & sight-reading</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="sub" style="margin:0">
+        I’m a B.F.A. Acting student at Carnegie Mellon University. I’m especially drawn to classical,
+        text-driven work and on-camera performance, and I love digging into language to find what’s immediate and human.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="resume">
+        <p style="margin:0 0 10px"><b>Email:</b> <a href="mailto:joliewan@andrew.cmu.edu">joliewan@andrew.cmu.edu</a></p>
+        <p style="margin:0 0 10px"><b>Phone:</b> <a href="tel:+16266201670">(626) 620-1670</a></p>
+        <p style="margin:0"><b>Social:</b>
+          <a class="pill" href="#" style="margin-left:8px">Instagram</a>
+          <a class="pill" href="#" style="margin-left:6px">LinkedIn</a>
+        </p>
+        <p class="small" style="margin-top:12px">Replace the social links with your real URLs.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Jolie Wang. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
